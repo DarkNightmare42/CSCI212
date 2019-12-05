@@ -1,5 +1,5 @@
 /**
- * @description: Project1
+ * @description: Project3
  * 				 GUI based program that reads input from a file, tokenizes
  * 				 and displays in a textarea panel on a gridlayout pane
  * @description: Candle Class, contains get, set methods for the candle class, 

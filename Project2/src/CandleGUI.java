@@ -56,19 +56,9 @@ public class CandleGUI extends JFrame{
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		add(unSorted);
-		unSorted.append("Unsorted Candles: \n\n");//heading
+		unSorted.append("Unsorted Candles: \n\n"+unsorted);//appends unsorted candle
 		add(afterSort);	
-		afterSort.append("Sorted Candles: \n\n");//heading
-		
-		CandleNode sortList = sorted.first.next;
-		CandleNode unsortList = unsorted.first.next;
-
-		while(sortList != null) {
-			afterSort.append((sortList.data).toString()+ "\n");
-			sortList = sortList.next;//next list item
-			unSorted.append((unsortList.data).toString() + "\n");
-			unsortList = unsortList.next; //next unsorted list item
-		}//append/print to gui loop
+		afterSort.append("Sorted Candles: \n\n"+sorted);//heading
 		
 		setVisible(true);
 	}//output method to call UI

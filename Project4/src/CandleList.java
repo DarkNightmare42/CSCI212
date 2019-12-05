@@ -44,6 +44,17 @@ public abstract class CandleList {
 	returnString; 
 	}//custom toString method
 	 
+	 public String searchString(float criteria) {
+		 CandleNode p = first.next; 
+		 String returnString =""; 
+		 while (p != null) { 
+			 if(p.data.getPrice() <= criteria) returnString += p.data + " \n"; 
+			 p = p.next; 
+			 } 
+		 return
+	returnString; 
+	 }
+	 
 
 } // class CandleList
 
