@@ -53,12 +53,12 @@ public class Project0 {
     
     public static void letterCounter(String inputStatement, int count[]) {
     	
-    	char[] testStatement = inputStatement.toCharArray();
+    	//char[] testStatement = inputStatement.toCharArray();
     	//converts string to a char array
        	
-    	for(int i = 0; i < testStatement.length; i++) {
-    		if(testStatement[i] == 'e') count[0]++;
-    		if(testStatement[i] == 'E') count[1]++;
+    	for(int i = 0; i < inputStatement.length(); i++) {
+    		if(inputStatement.charAt(i) == 'e') count[0]++;
+    		if(inputStatement.charAt(i) == 'E') count[1]++;
     		//if statements within for loop to count e's
     	}
     	
@@ -75,5 +75,4 @@ public class Project0 {
     	
         JOptionPane.showMessageDialog(null, "Number of e's are " + counted[0] + "\nNumber of E's are " + counted[1]);
     }//printOut method
-
 }
